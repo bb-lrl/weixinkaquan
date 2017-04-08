@@ -1,0 +1,13 @@
+.box_piclogo{width: 100%;background:#48ada5;padding-top: 30px;text-align: center;padding-bottom: 20px;}
+.box_piclogo img{border-radius: 100px;border:1px solid #fff;width: 80px;height: auto;}
+.box_piclogo p{margin-top: 20px;font-size: 20px;color:#fff;margin-bottom: 10px;}
+.verifier_box{color:#fff;font-size:14px;overflow: hidden;box-sizing: border-box;text-align: center;width: 230px;margin:0 auto;}
+.verifier_box .site{border-right:1px solid #fff;padding-right: 10px;width: 100px;display:inline-block;float: left;}
+.verifier_box .verifier_people{float: left;margin-right: 20px;display:inline-block;padding-left: 10px;}
+
+.time_box li{width: 49%;float: left;text-align: center;height: 60px;line-height: 60px;color:#fd941f;}
+.time_box li:nth-of-type(1){border-right:1px solid #E2E2E2;}
+.three_box{border-top:1px solid #E2E2E2;border-bottom:1px solid #E2E2E2;background:#f3f3f3;width: 100%;overflow: hidden;}
+.three_box li{width: 33.3%;height: 90px;text-align: center;float: left;padding:20px 0;box-sizing: border-box;}
+.three_box .mar{margin-top: 10px;}
+.last_day{text-align: center;color:#fd941f;font-size: 16px;margin-top: 10px;}

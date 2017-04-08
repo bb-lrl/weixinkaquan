@@ -1,0 +1,19 @@
+/*div里面的弹出框开始*/
+.tanchu{background:rgba(0,0,0,0.3);position:absolute;height: 100%;width: 100%;left:0;top:0;display: none;}
+.tanchukuang{top: 85px;height:500px;width:714px;background:#fff;position:absolute;z-index: 1;left:50%;margin-left: -357px;display: none;}
+.tanchukuang .header{height: 55px;width: 100%;background:rgba(0,0,0,0.1);line-height:55px;padding:0 20px;box-sizing: border-box;}
+.tanchukuang .header h3{float: left;}
+.tanchukuang .header div{float: right;height: 20px;width: 20px;margin-top:19px;position:relative;cursor:pointer;background:url(../images/icon-close.png) no-repeat center center;}
+
+
+.tanchukuang .body{height: 355px;width: 100%;text-align:center;color:#000;font-weight: bold;}
+.tanchukuang .body .body1{height: 375px;width: 410px;margin:0 auto;text-align:left;}
+.tanchukuang .body h3{margin-top: 20px;}
+.tanchukuang .body div{margin-top: 15px;}
+.tanchukuang .body .body1  div input{margin-right: 6px;}
+.tanchukuang .body .body1  div p{height: 20px;color:#888;font-weight: normal;}
+.tanchukuang .body .body1  div p a{color:#0996A2;}
+.tanchukuang .footer{height: 75px;width: 100%;background:rgba(0,0,0,0.1);line-height:80px;text-align:center;}
+.tanchukuang .footer .quxiao,.queding{height:25px;width: 90px;border:1px solid #888a89;border-radius:3px;display:inline-block;line-height: 25px;text-align: center;margin-right:5px;color:#333;cursor:pointer;}
+.tanchukuang .footer .queding{background:#6ca109;color:#fff;border:0 none;cursor:pointer;}
+/*div里面的弹出框结束*/

@@ -1,0 +1,8 @@
+html,body{width: 100%;height:100%;}
+body{background: #fff;position: relative;}
+.wrap{margin: 0 auto;padding-top: 20px;}
+
+
+.mainbox{width: 100%;position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);text-align: center;}
+.mainbox_bg{width: 154px;height: 133px;background: url(../images/no_no.jpg) no-repeat center center ;background-size:50% auto;margin: 0 auto;}
+.mainbox p{font-size: 24px;color: #63b35a;}

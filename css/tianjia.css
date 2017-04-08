@@ -1,0 +1,26 @@
+.tanchu{background:rgba(0,0,0,0.3);position:absolute;height: 590px;width: 1000px;left:50%;margin-left: -500px;top:0;}
+.tanchukuang{top: 85px;width:714px;background:#fff;position:absolute;z-index: 1;left:50%;margin-left: -357px;}
+.tanchukuang .header{height: 55px;width: 100%;background:#fff;line-height:55px;padding:0 20px;box-sizing: border-box;}
+.tanchukuang .header h3{float: left;}
+.tanchukuang .header div{float: right;height: 20px;width: 20px;margin-top:19px;position:relative;cursor:pointer;}
+.tanchukuang .header div div{height:4px;width: 15px;border-radius: 2px;background:#888;position:absolute;left:5px;top:-12px;}
+.tanchukuang .header div div:nth-of-type(1){transform:rotate(45deg);}
+.tanchukuang .header div div:nth-of-type(2){transform:rotate(135deg);}
+
+.tanchukuang .body{width: 100%;color:#000;font-weight: bold;}
+.tanchukuang .body .body4 .tianjia{height: 50px;width: 100%;border-bottom:1px solid #999;}
+.tanchukuang .body .body4 .tianjia a{display:inline-block;color:#333;}
+.tanchukuang .body .body4 .tianjia a.curr{color:#fff;}
+.tanchukuang .body .body4 .tianjia1{height: 50px;width:354px;line-height: 50px;text-align:center;display:inline-block;position:relative;cursor:pointer;background:#fff;color:#333;}
+.tanchukuang .body .body4 .current{background:#e24b04;color:#fff;}
+.tanchukuang .body .body4 .tianjia1 em{height: 36px;width: 36px;background:#e24b04;transform:rotate(45deg);position:absolute;top:50%;margin-top: -18px;right:-19px;}
+.tanchukuang .body .body4 .tianjia2{height: 50px;line-height: 50px;text-align: center;display:inline-block;color:#676767;width: 354px;cursor:pointer;}
+.tanchukuang .body .body4 .current{background:#e24b04;width: 354px;position:relative;margin-left: 0;color:#fff;}
+.tanchukuang .body .body4 .tianjia2 em{height: 36px;width: 36px;background:#fff;transform:rotate(-45deg);position:absolute;top:50%;margin-top: -18px;left:-19px;display:none;}
+
+.tanchukuang .body .body4 .shuru{border:1px solid #666;width: 295px;margin:75px auto 0;line-height: 38px;overflow: hidden;}
+.tanchukuang .body .body4 .shuru input{width: 252px;height: 38px;line-height: 38px;padding-left: 10px;box-sizing: border-box;float: left;}
+.tanchukuang .body .body4 .shuru span{float: left;width: 40px;height: 38px;border-left:1px solid #666;background:url(../images/images/search1_03.png) no-repeat;cursor:pointer;}
+.tanchukuang .footer{height: 75px;width: 100%;background:rgba(0,0,0,0.1);line-height:80px;text-align:center;margin-top:50px;position:relative;}
+.tanchukuang .footer .queding{height:25px;width: 90px;border:1px solid #888a89;border-radius:3px;display:inline-block;line-height: 25px;text-align: center;margin-right:5px;color:#333;}
+.tanchukuang .footer .queding{background:#bababa;color:#fff;border:0 none;}

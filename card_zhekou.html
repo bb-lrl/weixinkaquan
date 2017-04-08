@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>微信卡券管理页面</title>
+        <link rel="stylesheet" type="text/css" href="css/global.css" />
+        <link rel="stylesheet" type="text/css" href="css/message.css" />         
+        <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/mendian.js"></script>
+        <script src="js/message.js" type="text/javascript"></script>  
+
+    </head>
+    <body>
+    <div class="matter_wap">
+        <!--<div class="base_menu">
+                <li>
+                    <span>
+                        <i class="gzpt-mdgl"></i>
+                    </span>
+                    <a menu_name="card" href="#" class="now">微信卡券</a>
+                </li>
+            </div>-->
+        <div class="right_centent">
+            <!-- 面包屑 -->
+            <div class="sort">
+                <a href="javascript:;">推广营销</a>
+                &nbsp;&nbsp;>&nbsp;&nbsp;
+                <a href="index.html">微信卡券</a>
+                &nbsp;&nbsp;>&nbsp;&nbsp;
+                <a href="javascript:;">卡券管理</a>
+            </div>
+            <div class="centent_r_btm">
+                <!-- 左边的大盒子 -->
+                <div class="card_content clearfix">
+                    <div class="card_top">折扣券</div>
+                
+                    <div class="card_bd">
+                        <!-- 左边第一个盒子：劵面信息 -->
+                        <div class="card_box1">
+                            <div class="card_logo">
+                                <span class="logo_pic"></span>
+                                <span class="logo_name">盛戈移软</span>
+                            </div>
+                            <p class="box1_p1">新张开业全场<span class="zhegou_put">8</span>折</p>
+                            <p class="box1_p2">新张开业全场<span class="zhegou_put">8</span>折</p>
+                            <p class="box1_p3">有效期：2015.08.27-2015.09.27</p>
+                            <img src="images/mainbox_dot.jpg" alt="" class="mainbox_dot cur" />
+                        </div>
+                        <!-- 左边第二个盒子：劵面设置 -->
+                        <div class="card_box2">
+                            <img src="images/card_dot.jpg" alt="" class="dot"/>
+                            <img src="images/emd.png" alt="" / class="ewm">
+                            <p>135-8888-8888</p>
+                            <p>这里是操作提示</p>
+                             <img src="images/mainbox_dot.jpg" alt="" class="mainbox_dot" />
+                        </div>
+                        <!-- 左边第三个盒子：劵面设置 -->
+                        <div class="card_box3">
+                            <ul>
+                               <li>折扣券详情</li>
+                             </ul>
+                              <img src="images/mainbox_dot.jpg" alt="" class="mainbox_dot" />
+                        </div>
+                        <!-- 左边第四个盒子：劵面设置 -->
+                        <div class="card_box4">
+                            <ul>
+                               <li>适用门店</li>
+                            </ul>
+                             <img src="images/mainbox_dot.jpg" alt="" class="mainbox_dot" />
+                        </div>
+                        <!-- 左边第五个盒子：劵面设置 -->
+                        <div class="card_box5">
+                            <ul>
+                               <li>使用场景人口名称<span>入口提示语</span></li>
+                            </ul>
+                            <img src="images/mainbox_dot.jpg" alt="" class="mainbox_dot" />
+                        </div>
+                        <!-- 左边第六个盒子：劵面设置 -->
+                        <div class="card_box6">
+                            <ul>                       
+                               <li>营销场景人口名称<span>入口提示语</span></li>
+                            </ul>
+                             <img src="images/mainbox_dot.jpg" alt="" class="mainbox_dot" />
+                        </div>
+                        <!-- 左边第七个盒子：劵面设置 -->
+                        <div class="card_box7">
+                            <ul>
+                               <li>核销选项</li>
+                            </ul>
+                             <img src="images/mainbox_dot.jpg" alt="" class="mainbox_dot" />
+                        </div>
+                        </div>
+                </div>
+                <!-- 右边的大盒子 -->
+                <div class="mainbox clearfix">
+                    <div class=" on bigbox mainbox1">
+                        
+                            <p class="right_top">劵面信息</p>
+                            <div class="num1 clearfix">
+                                <p class="left_name">商家名称</p>
+                                <p class="right_named">盛戈移软</p>
+                            </div>
+                            <div class="num2 clearfix">
+                                <p class="left_name fl">商家logo</p>
+                                <div class="right_txt fl">
+                                   <span class="img_logo"></span>
+                                    <p class="note">如商户信息有变更，请在<span>卡券基础功能</span>开通页更新</p>
+                                </div>
+                            </div>
+                            <div class="num3 clearfix">
+                                <p class="left_name fl">卡券颜色</p>
+                                <div class="right_txt fl model">
+                                    <select name="yanse" class="color_type" disabled="disabled">
+
+                                    </select>
+                                    <div class="pic_color"></div>
+                                </div>
+                            </div>
+                            <div class="num3 clearfix num4">
+                                <p class="left_name fl">折扣额度</p>
+                                <div class="right_txt fl">
+                                    <input type="text" placeholder="8" id="input9" maxlength="3" class="zhegou_num"/><em>折</em>
+                                    <p class="note">请填写1~9.9之间的数字，精确到小数点后一位</p>
+                                </div>
+                            </div>
+                            <div class="num3 clearfix num4">
+                                <p class="left_name fl">折扣券标题</p>
+                                <div class="right_txt fl">
+                                    <input type="text" placeholder="新开张全场8折"  class="lipin_chief_tilte adaptt" maxlength="9" /><em><span class="adaptt_num" maxlength="9">7</span>/9</em>
+                                    <p class="note">建议填写折扣券"折扣额度"及自定义内容，描述卡券提供的具体优惠</p>
+                                </div>
+                            </div>
+                            <div class="num3 clearfix num4">
+                                <p class="left_name fl">副标题</p>
+                                <div class="right_txt fl">
+                                    <input type="text" placeholder="新开张全场8折"  class="lipin_vice_tilte adapttt" maxlength="16" /><em><span class="adapttt_num">7</span>/16</em>
+                                    
+                                </div>
+                            </div>
+                            <div class="num3 clearfix num5">
+                                <p class="left_name fl">有效期</p>
+                                <div class="right_radio fl">
+                                    <div class="choose_time">
+                                        <input type="radio" id="time1" name="time1" />
+                                        <label for="time1">&nbsp;&nbsp;固定日期</label>
+                                        <input type="text" style="border:1px solid #bfbfbf; width:80px"/>&nbsp;&nbsp;到&nbsp;&nbsp;
+                                        <input type="text" style="border:1px solid #bfbfbf; width:80px"/>
+                                    </div>
+                                    <div class="choose_time">
+                                        <input type="radio" id="time2" name="time1" />
+                                        <label for="time2">&nbsp;&nbsp;领取后,</label>
+                                        <select name="daytime" id="daytime"  class="daytime" >
+                                            <option value="当天" selected="selected"><a href="#">当天</a></option>
+                                            <option value="一天"><a href="#">一天</a></option>
+                                            <option value="两天"><a href="#">两天</a></option>
+                                            <option value="三天"><a href="#">三天</a></option>
+                                            <option value="四天"><a href="#">四天</a></option>
+                                        </select>
+                                        <span>生效，有效天数</span>
+                                        <select name="daytime" id="daytime"  class="daytime" >
+                                            <option value="当天" selected="selected"><a href="#">1天</a></option>
+                                            <option value="一天"><a href="#">2天</a></option>
+                                            <option value="两天"><a href="#">3天</a></option>
+                                            <option value="三天"><a href="#">4天</a></option>
+                                            <option value="四天"><a href="#">5天</a></option>
+                                        </select> 
+
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                    </div>
+                    <div class=" bigbox mainbox2">
+                            <p class="right_top">领券设置</p>
+                            <div class="num3 clearfix num4">
+                                <p class="left_name fl">库存</p>
+                                <div class="right_txt fl">
+                                    <input type="text" placeholder="100" /><em>份</em>
+                                </div>
+                            </div>
+                            <div class="num3 clearfix num4">
+                                <p class="left_name fl">领券限制<span style="display:block;color:#969698;">(选填)</span></p>
+                                <div class="right_txt fl">
+                                    <input type="text" placeholder="1" /><em>张</em>
+                                    <p class="note">每个客户领券上限，如不填，则默认为1</p>
+                                </div>
+                            </div>
+                            <div class="duoxuan" >
+                                <input type="checkbox" id="share1" />
+                                <label for="share1">用户可以分享领券链接</label>
+                            </div>
+                            <div class="duoxuan" >
+                                <input type="checkbox" id="share2" />
+                                <label for="share2">用户领券后可转赠其他好友</label>
+                            </div>
+                            <!-- 销券设置=========== -->
+                            <p class="right_top right_top2">销券设置</p>
+                            <div class="num3 clearfix mb">
+                                <p class="left_name fl">销券方式</p>
+                                <div class="right_txt fl">
+                                    <div class="one">
+                                        <input type="radio" id="rad1" name="xiaocunstyle" class="rad_first"/><label for="rad1">仅条形码</label>
+                                        <p style="color:#969698">只显示卡劵号，验证后可进行销劵</p>
+                                    </div>
+                                    <div class="two" style="margin-top:10px;">
+                                        <input type="radio" id="rad2" name="xiaocunstyle" class="rad_second"/><label for="rad2">二维码</label>
+                                        <p style="color:#969698">包含卡券信息的二维码，扫描后可进行销劵</p>
+                                    </div>
+                                    <div class="three" style="margin-top:10px;">
+                                        <input type="radio" id="rad3" name="xiaocunstyle" class="rad_three"/><label for="rad3">仅卡券号</label>
+                                        <p style="color:#969698">包含卡券信息的条形码，扫描后可进行销劵</p>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="num3 clearfix num4">
+                                <p class="left_name fl">操作提示</p>
+                                <div class="right_txt fl">
+                                    <input type="text" placeholder="这里是操作提示"  class="op_tips adapt" maxlength="16"  /><em><span class="adapt_num">4</span>/16</em>
+                                   <p class="note">建议引导用户到店出示卡券，由店员完成核销操作</p>
+                                </div>
+                            </div>
+                    </div>
+                            
+                    <div class=" bigbox mainbox3">
+                            <p class="right_top">使用须知</p>
+                            <div class="num3 clearfix num4">
+                                <p class="left_name fl">使用须知</p>
+                                <div class="right_txt fl">
+                                    <textarea name="know" class="know preferential_t" placeholder="这里是使用须知" maxlength="300"></textarea>
+                                    <p class="indust"><em class="preferential_numt">7</em>/300</p>
+                                </div>
+                            </div>
+                            <div class="num3 clearfix num4">
+                                <p class="left_name fl">客服电话</p>
+                                <div class="right_txt fl">
+                                    <input type="text" placeholder="13688888888" class="kefu_phone" maxlength="11" />
+                                    <p class="note">手机或固话</p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class=" bigbox mainbox4">
+                            <p class="right_top">服务信息</p>
+                            <div class="num3 clearfix mb">
+                                <p class="left_name fl">适用门店</p>
+                                <div class="right_txt fl">
+                                <p>"适用门店"方便帮助用户到店消费，如有门店，请仔细配置。可在"功能，"门店管理"管理门店信息</p>
+                                    <div class="two" style="margin-top:10px;">
+                                        <input type="radio" id="rad22" name="mendian" /><label for="rad22">全部门店适用</label>
+                                    </div>
+                                    <div class="one">
+                                        <input type="radio" name="mendian" id="rad11" /><label
+                                            for="rad11">指定门店适用</label>
+                                        <p class="shopper_add">+添加新门店</p>
+                                        <div class="add_box"></div>
+
+                                    </div>
+                                    <div id="hide_box">
+                                        <ul class="add_ul add_first bt_title">
+                                            <li class="add_ull">门店名称</li>
+                                            <li class="add_ulr">门店地址</li>
+                                            <li class="add_ulc">操作</li>
+                                        </ul>
+                                        <ul class="add_ul">
+                                            <li class="add_ull">盛戈天河商贸店</li>
+                                            <li class="add_ulr">广东省广州市天河区中山大道8号天河商贸大厦1403</li>
+                                            <li class="add_ulc delete_btn">删除</li>
+                                        </ul>
+                                        <ul class="add_ul">
+                                            <li class="add_ull">盛戈移软（总舵）</li>
+                                            <li class="add_ulr">广东省广州市天河区龙口东路19号悦华大厦</li>
+                                            <li class="add_ulc delete_btn">删除</li>
+                                        </ul>
+                                    </div>   
+                                </div>
+                            </div>
+
+                    </div>
+                    <div class=" bigbox mainbox5">
+                            <p class="right_top">使用场景入口</p>
+                            <div class="num3 clearfix num4">
+                                <p class="left_name fl">入口名称:</p>
+                                <div class="right_txt fl">
+                                    <input type="text"  />
+                                </div>
+                            </div>
+                            <div class="num3 clearfix num4">
+                                <p class="left_name fl">入口提示语:</p>
+                                <div class="right_txt fl">
+                                    <input type="text"  />
+                                </div>
+                            </div>
+                            <div class="num3 clearfix num4">
+                                <p class="left_name fl">跳转链接:</p>
+                                <div class="right_txt fl">
+                                    <input type="text"  />
+                                </div>
+                            </div>
+                    </div>
+                    <div class=" bigbox mainbox6">
+                            <p class="right_top">营销场景入口</p>
+                            <div class="num3 clearfix num4">
+                                <p class="left_name fl">入口名称:</p>
+                                <div class="right_txt fl">
+                                    <input type="text"  />
+                                </div>
+                            </div>
+                            <div class="num3 clearfix num4">
+                                <p class="left_name fl">入口提示语:</p>
+                                <div class="right_txt fl">
+                                    <input type="text"  />
+                                </div>
+                            </div>
+                            <div class="num3 clearfix num4">
+                                <p class="left_name fl">跳转链接:</p>
+                                <div class="right_txt fl">
+                                    <input type="text"  />
+                                </div>
+                            </div>
+                    </div>
+                    <div class=" bigbox mainbox7 clearfix">
+                            <p class="right_top">核销选项</p>
+                            <div class="warp7">
+                                <div class="num3 clearfix ">
+                                    <p class="left_name fl">标题:</p>
+                                    <div class="right_txt fl">
+                                        <input type="text"  class="txt1" />
+                                        <br />
+                                        <div class="mtt">
+                                            <input type="radio" id="rad111" name="hexiao"/><label for="rad111">禁用</label>
+                                        </div>
+                                        <div class="mtt">
+                                            <input type="radio" id="rad222" name="hexiao"/><label for="rad222">单选</label>
+                                        </div>
+                                        <div class="mtt">
+                                            <input type="radio" id="rad333" name="hexiao"/><label for="rad333" >多选</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="num3 clearfix num4">
+                                        <p class="left_name fl">选项一:</p>
+                                        <div class="right_txt fl">
+                                            <input type="text" placeholder="" />
+                                        </div>
+                                </div>
+                                <div class="num3 clearfix num4">
+                                        <p class="left_name fl">选项二:</p>
+                                        <div class="right_txt fl">
+                                            <input type="text" placeholder="" />
+                                        </div>
+                                </div>
+                                <div class="num3 clearfix num4">
+                                        <p class="left_name fl">选项三:</p>
+                                        <div class="right_txt fl">
+                                            <input type="text" placeholder="" /><em>删除选项</em>
+                                        </div>
+                                </div>
+                                <div class="num3 clearfix num4">
+                                        <p class="left_name fl">选项四:</p>
+                                        <div class="right_txt fl">
+                                            <input type="text" placeholder="" /><em>删除选项</em>
+                                        </div>
+                                </div>
+                                <div class="num3 clearfix num4">
+                                        <p class="left_name fl">选项五:</p>
+                                        <div class="right_txt fl">
+                                            <input type="text" placeholder="" /><em>删除选项</em>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="add_btn">增加选项</div>
+                    </div>
+                </div>
+
+                  
+                
+                
+                <!-- 底部 -->
+                <div class="ft_bottom">
+                    <input type="reset" value="取消"  />
+                    <input type="submit" value="保存" />   
+                </div>
+                <!-- 模态窗口 -->
+                <div class="layer">
+                    <div class="layer_hd">
+                        请选择卡券颜色
+                        <span class="close"></span>
+                    </div>
+                    
+                    <dl>
+                        <dt style="background:#63b459"></dt>
+                        <dd>
+                            <p>R99G179B89</p>
+                            <P>#63B359</P>
+                            <P>颜色名称：Color010</P>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt style="background:#2c9f67"></dt>
+                        <dd>
+                            <p>R44G159B1003</p>
+                            <P>#2C9F67</P>
+                            <P>颜色名称：Color020</P>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt style="background:#509FC9"></dt>
+                        <dd>
+                            <p>R80G159B201</p>
+                            <P>#509FC9</P>
+                            <P>颜色名称：Color030</P>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt style="background:#5885cf"></dt>
+                        <dd>
+                            <p>R88G133B207</p>
+                            <P>#5885CF</P>
+                            <P>颜色名称：Color040</P>
+                        </dd>
+                    </dl>
+                    <dl class="nomargin">
+                        <dt style="background:#9062c0"></dt>
+                        <dd>
+                            <p>R144G98B192</p>
+                            <P>#9062C0</P>
+                            <P>颜色名称：Color050</P>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt style="background:#d09a45"></dt>
+                        <dd>
+                            <p>R208G154B69</p>
+                            <P>#D09A45</P>
+                            <P>颜色名称：Color060</P>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt style="background:#e4b138"></dt>
+                        <dd>
+                            <p>R228G177B56</p>
+                            <P>#E4B138</P>
+                            <P>颜色名称：Color070</P>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt style="background:#ee903c"></dt>
+                        <dd>
+                            <p>R238G144B60</p>
+                            <P>#EE903C</P>
+                            <P>颜色名称：Color080</P>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt style="background:#dd6549"></dt>
+                        <dd>
+                            <p>R221G101B73</p>
+                            <P>#DD6549</P>
+                            <P>颜色名称：Color090</P>
+                        </dd>
+                    </dl>
+                    <dl class="nomargin">
+                        <dt style="background:#cc463d"></dt>
+                        <dd>
+                            <p>R204G70B61</p>
+                            <P>#CC463D</P>
+                            <P>颜色名称：Color100</P>
+                        </dd>
+                    </dl>
+
+                </div>
+                <div class="layer-bg"></div>
+            </div>
+        </div>   
+
+    </div>
+    <!-- 模态窗口 -->
+   
+     <div class="display_no">
+        <div class="tanchu"></div>
+        <div class="tanchukuang">
+            <div class="header">
+                <h3>选择门店</h3>
+            <div class="wronger"></div>
+            </div>
+            <div class="body">
+                <div class="body2">
+                    <div class="sousuo">
+                        <input type="text" placeholder="请输入门店名称或地址" /> <span></span>
+                    </div>
+                    <ul class="nametype">
+                        <li>
+                            <div>
+                                <input type="checkbox" class="checkbox" id="c0" /><em>门店名称</em>
+                                <span></span>
+                            </div> <span class="current">门店地址</span>
+                        </li>
+                        <li>
+                            <div>
+                                <input type="checkbox" checked="checked" name="checkbox1"
+                                    id="c1" /><em>盛戈天河商贸店</em>
+                            </div> <span>广东省广州市天河区中山大道8号天河商贸大厦1403</span>
+                        </li>
+                        <li>
+                            <div>
+                                <input type="checkbox" name="checkbox1" id="c2" /><em>盛戈移软（总舵）</em>
+                            </div> <span>广东省广州市天河区龙口东路19号悦华大厦</span>
+                        </li>
+
+                    </ul>
+                    <p>选择要挂载卡券的门店，挂载了卡券的优质门店将获得“附近的人”曝光位置，每个门店每天在附近最多可发放100张卡券</p>
+                </div>
+            </div>
+            <div class="footer">
+                <span>已选<a class="chooseNum">1</a>家，共2家
+                </span> <span class="queding">完成</span>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
+
+ 

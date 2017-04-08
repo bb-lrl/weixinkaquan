@@ -1,0 +1,52 @@
+/* 
+* @Author: Marte
+* @Date:   2016-01-26 20:41:57
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-01-29 11:39:07
+*/
+.matter_wap{  
+  float: left;
+  margin-top: 20px;
+  width: 1000px;}
+.matter_wap .right_centent {
+  float: right;
+  width: 780px;
+  background: #fff;
+  border: 1px solid #ccc;
+
+}
+.sort_bd{margin: 0 15px;border-bottom:1px solid #999;}
+.sort_bd{overflow: hidden;}
+.sort_bdr,.sort_bdl{float: left;}
+.sort_bdr p{color:#999;margin-left: 80px;margin-bottom: 10px;}
+.sort_bdl h3{color:#333;display:block;margin-bottom: 10px;}
+.main_no{box-sizing: border-box;width: 754px;border-bottom:1px solid #999;margin:0 15px;padding-bottom: 10px;}
+.main_not{margin-top: 10px;overflow:hidden;}
+.main_notl,.main_notr{float: left;}
+.main_notl{margin: 0 30px 0 0;}
+.ipt_l,.ipt_r{float: left;}
+.ipt_l{margin-top: 3px;}
+.ipt_r{margin-left: 10px;}
+.rrow{overflow:hidden;margin-bottom: 10px;}
+.nametype{width: 666px;border-top:1px solid #bfbfbf;margin-bottom:10px;}
+ .nametype li{height: 35px;width: 100%;line-height: 35px;border-bottom:1px solid #bfbfbf;padding-left:20px;box-sizing: border-box;}
+ .nametype li:nth-of-type(1){background:#e9e9e9;}
+ .nametype li div{width: 157px;display:inline-block;}
+ .nametype li div input{margin-right: 10px;}
+ 
+ .nametype li span{display:inline-block;width: 323px;color:#9d9d9d;font-size:14px;}
+.nametype li span.current{color:#000;font-size:16px;}
+.caozuo{box-sizing: border-box;padding-left: 110px;}
+.nametype li .shanchu{padding-left:57px;box-sizing: border-box;}
+.nametype .shanchu span{width: 44px;text-align: center;color:#1b8cf2;cursor:pointer;}
+.door_add{margin-left: 20px;margin-bottom: 10px;}
+.ipt_r p{color:#999;}
+.main_notr .phone_num{height: 20px;width: 150px;border:1px solid #999;}
+.main_notr p{color:#999;cursor:pointer;}
+.main_notr .door_add{color:#1b8cf2;display: none;}
+
+.footer{height: 75px;width: 100%;line-height:80px;text-align:center;margin-top:50px;position:relative;}
+ 
+.footer .chooseNum{color:#666;}
+.footer .quxiao,.queding{height:25px;width: 90px;border:1px solid #888a89;border-radius:3px;display:inline-block;line-height: 25px;text-align: center;margin-right:5px;color:#333;cursor:pointer;}
+.footer .queding{background:#6ca109;color:#fff;border:0 none;cursor:pointer;}

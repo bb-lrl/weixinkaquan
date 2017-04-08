@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telephone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- 适应移动端end --> 
+    <title>有核销权限</title>
+    <link rel="stylesheet" type="text/css" href="css/global.css" />
+    <link rel="stylesheet" type="text/css" href="css/index1.css" />
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/index1.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <!-- 头部扫一扫跟查找 -->
+    <div class="scan">扫一扫</div>
+    <div class="search">
+        <input type="text" class="search_ipt"placeholder="请输入优惠券号或会员卡号" />
+        <span class="search_look">查找</span>
+    </div>
+    <!-- 具体步骤 -->
+    <div class="step">
+        <div class="step_one">
+            <p class="color_p">第一步<span class="step_right">扫描/搜索卡券</span></p>
+            <p>请顾客出示卡券，点击扫一扫按钮扫描顾客出示的卡券，或输入优惠券号或会员卡号搜索</p>
+        </div>
+        <div class="step_one">
+            <p class="color_p">第二步<span class="step_right">验证卡券信息</span></p>
+            <p>验证卡券信息是否有效</p>
+        </div>
+        <div class="step_one">
+            <p class="color_p">第三步<span class="step_right">适用完成</span></p>
+            <p>查看使用结果，顾客将同时收到优惠券核销或会员卡使用通知</p>
+        </div>
+    </div>
+    <!-- 核销记录按钮 -->
+    <div class="record_btn" onclick="javascript:location.href='record1.html'">核销记录</div>
+    <!-- 券面信息 -->
+    <div class="box_message">
+        <div class="card_box">
+            <div class="card_logo">
+                <img src="images/logo.png" />
+                <span>盛戈移软</span>               
+            </div>
+             <p class="card_title">新张开业全场八折</p>
+             <p>序列号：0011-1100-3737</p>
+             <p class="padding_bottm">有效期：2015.09.20-2015.12.23</p>
+             <div class="dot"></div>            
+        </div>
+        <div class="details">
+            <p class="details_look">查看详情</p>
+            <div class="details_box">
+                <dl>
+                    <dt>优惠详情</dt>
+                    <dd>凭此券消费打8折</dd>
+                </dl>
+                <dl>
+                    <dt>使用须知</dt>
+                    <dd>请在申请互联网金融培训时，出示此卡券，即可享受折扣！</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="remark">
+            <label for="remark_left">备注(选填)</label>
+            <input type="text" placeholder="请输入备注" />
+        </div>
+         <div class="remark_title">核销选项标题</div>
+         <div class="radio_choose">
+             <input type="radio" name="box_cho" />
+             <label for="box_choose">核销选项一</label>
+         </div>
+         <div class="radio_choose">
+             <input type="radio" name="box_cho" />
+             <label for="box_choose">核销选项二</label>
+         </div>
+         <div class="radio_choose">
+             <input type="radio" name="box_cho" />
+             <label for="box_choose">核销选项三</label>
+         </div>
+         <div class="countersign_btn">确认核销</div>
+         <div class="recall_no">卡券核销后不可撤回</div>
+
+    </div>
+</div>
+    
+</body>
+</html>

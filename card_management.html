@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>微信卡券管理页面</title>
+        <link rel="stylesheet" type="text/css" href="css/global.css" />
+        <link rel="stylesheet" type="text/css" href="css/cardgl.css" /> 
+        <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script src="js/cardgl.js" type="text/javascript"></script>  
+
+    </head>
+    <body>
+    <div class="matter_wap">
+        <!--<div class="base_menu">
+                <li>
+                    <span>
+                        <i class="gzpt-mdgl"></i>
+                    </span>
+                    <a menu_name="card" href="#" class="now">微信卡券</a>
+                </li>
+            </div>-->
+        <div class="right_centent">
+            <div class="sort">
+                <a href="javascript:;"  >推广营销</a>
+                &nbsp;&nbsp;>&nbsp;&nbsp;
+                <a href="index.html">微信卡券</a>
+                &nbsp;&nbsp;>&nbsp;&nbsp;
+                <a href="javascript:;">卡券管理</a>
+            </div>
+            <div class="centent_r_btm">
+                <div class="choose_type">
+                    <em>卡券类型：</em>
+                        <select name="cardtype" id="cardtype"  class="cardtype" >
+                            <option value="折扣券" selected="selected"><a href="#">折扣券</a></option>
+                            <option value="代金券"><a href="#">代金券</a></option>
+                            <option value="礼品券"><a href="#">礼品券</a></option>
+                            <option value="团购券"><a href="#">团购券</a></option>
+                            <option value="优惠劵"><a href="#">优惠劵</a></option>
+                        </select> 
+                        <div class="search_box">
+                            <em>卡券名称：</em>
+                            <div class="ipt_box">
+                                <input type="text" class="search" />
+                                <div class="search_btn"></div>
+                            </div>  
+                        </div>
+                        <div class="update">更新列表</div>
+                        <div class="add_card">添加卡券</div>
+                </div>
+                <div class="cardCon">
+                        <ul class="card_title ">
+                            <li class="cardkind">卡券类型</li>
+                            <li class="cardname">卡券名称</li>
+                            <li class="cardtime">卡券有效期</li>
+                            <li class="cardstatus">状态</li>
+                            <li class="inventory">库存</li>
+                            <li class="get_number">领取数量</li>
+                            <li class="cancel_number">核销数量</li>
+                            <li class="operation">操作</li>
+                        </ul>
+                        <ul class="type_num">
+                            <li class="cardkind">折扣券</li>
+                            <li class="cardname">新开张全场8折</li>
+                            <li class="cardtime">领取后当天生效30天有效</li>
+                            <li class="cardstatus">待投放</li>
+                            <li class="inventory">
+                                <span>80000</span>
+                                <label for="loadin" class="pen"></label>
+                                
+                                </li>
+                            <li class="get_number">100</li>
+                            <li class="cancel_number">60</li>
+                            <li class="operation caozuo">
+                                <a title="查看详情" href="javascript:;" class="see" onclick="javascript:location.href='card_integration.html'"></a> 
+                                <a title="删除" class="del"></a>
+                            </li>
+                            <div class="num_box">
+                                <div style="width:84px;" class="num_box_hd">
+                                    <input type="radio" id="add_num" name="add_rad" /><label for="add_num">增加</label>
+                                </div>
+                                <div class="num_box_hd">
+                                    <input type="radio" id="reduce_num"  name="add_rad"/><label for="reduce_num">减少</label>
+                                </div>
+                                <input type="text" class="copies" /><span>份</span>
+                                <p class="pation">库存不能少于1</p>
+                                <div class="num_box_footer">
+                                    <div class="ensure">确定</div>
+                                    <div class="cancel"> 取消</div>
+                                </div>
+                                <div class="mini_dot"></div>  
+                            </div>
+                        </ul>
+                        <ul class="type_num">
+                            <li class="cardkind">代金券</li>
+                            <li class="cardname">新开张全场8折</li>
+                            <li class="cardtime">领取后当天生效30天有效</li>
+                            <li class="cardstatus">待投放</li>
+                            <li class="inventory"><span>80000</span><label for="loadin"
+                                class="pen"></label></li>
+                            <li class="get_number">100</li>
+                            <li class="cancel_number">60</li>
+                            <li class="operation caozuo">
+                                <a title="查看详情" href="javascript:;" class="see" onclick="javascript:location.href='card_integration.html'"></a>
+                                <a title="删除" class="del"></a>
+                            </li>
+                                <div class="num_box">
+                                    <div style="width:84px;" class="num_box_hd">
+                                        <input type="radio" id="add_num" name="add_rad" /><label for="add_num">增加</label>
+                                    </div>
+                                    <div class="num_box_hd">
+                                        <input type="radio" id="reduce_num"  name="add_rad"/><label for="reduce_num">减少</label>
+                                    </div>
+                                    <input type="text" class="copies" /><span>份</span>
+                                    <p class="pation">库存不能少于1</p>
+                                    <div class="num_box_footer">
+                                        <div class="ensure">确定</div>
+                                        <div class="cancel"> 取消</div>
+                                    </div>
+                                    <div class="mini_dot"></div>  
+                                </div>
+                        </ul>
+                        <ul class="type_num">
+                            <li class="cardkind">礼品券</li>
+                            <li class="cardname">新开张全场8折</li>
+                            <li class="cardtime">领取后当天生效30天有效</li>
+                            <li class="cardstatus">待投放</li>
+                            <li class="inventory"><span>80000</span><label for="loadin"
+                                class="pen"></label></li>
+                            <li class="get_number">100</li>
+                            <li class="cancel_number">60</li>
+                            <li class="operation caozuo">
+                                <a title="查看详情" href="javascript:;" class="see" onclick="javascript:location.href='card_integration.html'"></a> 
+                                <a title="删除" class="del"></a>
+                            </li>
+                                <div class="num_box">
+                                    <div style="width:84px;" class="num_box_hd">
+                                        <input type="radio" id="add_num" name="add_rad" /><label for="add_num">增加</label>
+                                    </div>
+                                    <div class="num_box_hd">
+                                        <input type="radio" id="reduce_num"  name="add_rad"/><label for="reduce_num">减少</label>
+                                    </div>
+                                    <input type="text" class="copies" /><span>份</span>
+                                    <p class="pation">库存不能少于1</p>
+                                    <div class="num_box_footer">
+                                        <div class="ensure">确定</div>
+                                        <div class="cancel"> 取消</div>
+                                    </div>
+                                    <div class="mini_dot"></div>  
+                                </div>
+                        </ul>
+                        <ul class="type_num">
+                            <li class="cardkind">团购券</li>
+                            <li class="cardname">新开张全场8折</li>
+                            <li class="cardtime">领取后当天生效30天有效</li>
+                            <li class="cardstatus">待投放</li>
+                            <li class="inventory"><span>80000</span><label for="loadin"
+                                class="pen"></label></li>
+                            <li class="get_number">100</li>
+                            <li class="cancel_number">60</li>
+                            <li class="operation caozuo">
+                                <a title="查看详情" href="javascript:;" class="see" onclick="javascript:location.href='card_integration.html'"></a> 
+                            </li>
+                                <div class="num_box">
+                                    <div style="width:84px;" class="num_box_hd">
+                                        <input type="radio" id="add_num" name="add_rad" /><label for="add_num">增加</label>
+                                    </div>
+                                    <div class="num_box_hd">
+                                        <input type="radio" id="reduce_num"  name="add_rad"/><label for="reduce_num">减少</label>
+                                    </div>
+                                    <input type="text" class="copies" /><span>份</span>
+                                    <p class="pation">库存不能少于1</p>
+                                    <div class="num_box_footer">
+                                        <div class="ensure">确定</div>
+                                        <div class="cancel"> 取消</div>
+                                    </div>
+                                    <div class="mini_dot"></div>  
+                                </div>
+                            </ul>
+                            <ul class="type_num">
+                                <li class="cardkind">优惠券</li>
+                                <li class="cardname">新开张全场8折</li>
+                                <li class="cardtime">领取后当天生效30天有效</li>
+                                <li class="cardstatus">待投放</li>
+                                <li class="inventory"><span>80000</span><label for="loadin"
+                                    class="pen"></label></li>
+                                <li class="get_number">100</li>
+                                <li class="cancel_number">60</li>
+                                <li class="operation caozuo">
+                                    <a title="更改"></a>
+                                    <a title="查看详情" href="javascript:;" class="see" onclick="javascript:location.href='card_integration.html'"></a>
+                                    <a title="删除" class="del"></a>
+                                </li>
+                                    <div class="num_box">
+                                        <div style="width:84px;" class="num_box_hd">
+                                            <input type="radio" id="add_num" name="add_rad" /><label for="add_num">增加</label>
+                                        </div>
+                                        <div class="num_box_hd">
+                                            <input type="radio" id="reduce_num"  name="add_rad"/><label for="reduce_num">减少</label>
+                                        </div>
+                                        <input type="text" class="copies" /><span>份</span>
+                                        <p class="pation">库存不能少于1</p>
+                                        <div class="num_box_footer">
+                                            <div class="ensure">确定</div>
+                                            <div class="cancel"> 取消</div>
+                                        </div>
+                                        <div class="mini_dot"></div>  
+                                    </div>
+                                </ul>
+                                <ul class="type_num">
+                                    <li class="cardkind">折扣券</li>
+                                    <li class="cardname">新开张全场8折</li>
+                                    <li class="cardtime">领取后当天生效30天有效</li>
+                                    <li class="cardstatus">待投放</li>
+                                    <li class="inventory"><span>80000</span><label for="loadin"
+                                        class="pen"></label></li>
+                                    <li class="get_number">100</li>
+                                    <li class="cancel_number">60</li>
+                                    <li class="operation caozuo">
+                                        <a title="更改"></a>
+                                        <a title="提交" class="tj"></a>
+                                        <a title="查看详情" href="javascript:;" class="see" onclick="javascript:location.href='card_integration.html'"></a>
+                                        <a title="删除" class="del"></a>
+                                    </li>
+                                        <div class="num_box">
+                                            <div style="width:84px;" class="num_box_hd">
+                                                <input type="radio" id="add_num" name="add_rad" /><label for="add_num">增加</label>
+                                            </div>
+                                            <div class="num_box_hd">
+                                                <input type="radio" id="reduce_num"  name="add_rad"/><label for="reduce_num">减少</label>
+                                            </div>
+                                            <input type="text" class="copies" /><span>份</span>
+                                            <p class="pation">库存不能少于1</p>
+                                            <div class="num_box_footer">
+                                                <div class="ensure">确定</div>
+                                                <div class="cancel"> 取消</div>
+                                            </div>
+                                            <div class="mini_dot"></div>  
+                                        </div>
+                                </ul>
+                        <!-- 模态窗口 -->
+                        <div class="layer">
+                            <div class="layer_hd">
+                                <p>选择卡券类型</p>
+                                <span class="close"></span>
+                            </div>
+                            <div class="layer_bd ">
+                                <div class="chose_num">
+                                <p>选择你要创建的卡券类型</p>
+                                <dl>
+                                    <dt>
+                                    <input type="radio" id="rad1" name="rad" value="折扣券" /><label for="rad1">&nbsp;&nbsp;折扣券</label>
+                                    </dt>
+                                     <dd>可为用户提供消费折扣</dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                    <input type="radio" id="rad2" name="rad" value="代金券" /><label for="rad2">&nbsp;&nbsp;代金券</label>
+                                    </dt>
+                                     <dd>可为用户提供抵扣现金服务，可设置为"满*元,减*元"</dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                    <input type="radio" id="rad3" name="rad" value="礼品券" /><label for="rad3">&nbsp;&nbsp;礼品券</label>
+                                    </dt>
+                                     <dd>可为用户提供消费送赠品服务</dd>
+                                </dl>
+                                <dl>
+                                    <dt>
+                                    <input type="radio" id="rad4" name="rad" value="团购券" /><label for="rad4">&nbsp;&nbsp;团购券</label>
+                                    </dt>
+                                     <dd>可为用户提供团购套餐服务</dd>
+                                </dl>
+                               <dl>
+                                    <dt>
+                                    <input type="radio" id="rad5" name="rad" value="优惠券" /><label for="rad5">&nbsp;&nbsp;优惠券</label>
+                                    </dt>
+                                     <dd>即"通用券,"建议当以上四种无法满足需求时使用</dd>
+                                </dl>
+                                </div>
+                            </div>
+                            <div class="layer_ft">
+                                <input type="reset" value="取消"  class="layer_ft_no" />
+                                <input type="submit" value="确定" class="layer_ft_yes" onclick="javascript:location.href='card_zhekou.html'" />
+                            </div>
+                        </div>
+                        <div class="layer-bg"></div>
+                    </div>          
+                </div>      
+        </div>    
+    </div>
+    </body>
+</html>

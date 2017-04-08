@@ -1,0 +1,34 @@
+/* 
+* @Author: Marte
+* @Date:   2016-01-11 18:36:48
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-01-28 18:35:29
+*/
+/* 首页css样式 */
+.matter_wap{  
+  float: left;
+  margin-top: 20px;
+  width: 1000px;}
+.matter_wap .right_centent {
+  float: right;
+  width: 780px;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+dl{cursor:pointer;}
+.centent_r_btm {
+  width: 780px;
+  min-height: 370px;
+  border-top: none;
+  float: left;
+  background-color: #fff;
+  margin-top: -1px;
+}
+.centent_r_btm dl{float: left;width: 240px;height: 120px;margin-left: 15px;position: relative;}
+.centent_r_btm dl:nth-of-type(1){background-color: #1B62CC;}
+.centent_r_btm dl:nth-of-type(2){background-color: #FA8207;}
+.centent_r_btm dl:nth-of-type(3){background-color: #CF228E;}
+.centent_r_btm dl dt{float: left;margin: 24px 0 0 20px;}
+.centent_r_btm dl dd{color: #fff;font-size: 16px;float: left;height: 120px;line-height: 120px;margin-left: 35px;}
+
+

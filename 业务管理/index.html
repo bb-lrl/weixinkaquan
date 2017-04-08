@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>业务管理</title>
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+    <div class="matter_wap">
+        <div class="right_centent">
+            <div class="title">
+                <span>文字</span>
+                <i>></i>
+                <span>类型</span>
+            </div>
+            <div class="big_tit">
+                <span class="span_one choose_on">基础业务</span>
+                <span class="span_two">子业务</span>
+            </div>
+            <div class="big_choose first_box">
+                <div class="add">
+                    <div class="add_l add_ll">新增基础业务</div>
+                    <div class="add_r">
+                        <span></span>
+                        <input type="text" />
+                        <div class="look_ser">查询</div>
+                    </div>
+                </div>
+                 <div class="tab ">
+                    <ul>
+                        <li class="li1">
+                            <div class="name_l">业务名称</div>
+                            <div class="openw_l">基础业务名称</div>
+                            <div class="low_work_l">下级业务</div>
+                            <div class="operate_l">操作</div>
+                        </li>
+                        <li class="li2">
+                             <div class="name_l">PE</div>
+                            <div class="openw_l">个人业务</div>
+                            <div class="low_work_l col_change">现金业务 按揭业务</div>
+                            <div class="operate_l">
+                                <span class="clc_one"><img src="images/operate.jpg" height="30"  alt="" /></span>
+                                <span class="del"><img src="images/close.jpg" height="30" alt="" /></span>
+                            </div>
+                        </li>
+                        <li class="li2">
+                            <div class="name_l">PE</div>
+                            <div class="openw_l">个人业务</div>
+                            <div class="low_work_l col_change">现金业务 按揭业务</div>
+                            <div class="operate_l">
+                                <span class="clc_one"><img src="images/operate.jpg" height="30"  alt="" /></span>
+                                <span class="del"><img src="images/close.jpg" height="30" alt="" /></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="leave_box">
+                    <a href="javascript:" class="noww">1</a>
+                    <a href="javascript:">2</a>
+                    <a href="javascript:">共<i>2</i>页</a>
+                </div>
+            </div>
+            <div class="big_choose dn  second_box">
+                <div class="add">
+                    <div class="add_l add_er">新增子业务</div>
+                    <div class="add_r">
+                        <span></span>
+                        <input type="text" />
+                        <div class="look_ser">查询</div>
+                    </div>
+                </div>
+                <div class="tab ">
+                    <ul>
+                        <li class="li1">
+                            <div class="name">业务名称</div>
+                            <div class="openw">已启用业务</div>
+                            <div class="operate">操作</div>
+                        </li>
+                        <li class="li2">
+                            <div class="name1">个人业务</div>
+                            <div class="openw1">预约业务 排队叫号机业务 填单机业务</div>
+                            <div class="operate1">
+                                <span class="clc"><img src="images/operate.jpg" height="30" /></span>
+                                <span class="del"><img src="images/close.jpg" height="30" /></span>
+                            </div>
+                        </li>
+                        <li class="li2">
+                            <div class="name1">个人业务</div>
+                            <div class="openw1">预约业务 排队叫号机业务 填单机业务</div>
+                            <div class="operate1">
+                                <span class="clc"><img src="images/operate.jpg" height="30" /></span>
+                                <span class="del"><img src="images/close.jpg" height="30" /></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="leave_box1">
+                    <a href="javascript:" class="noww">1</a>
+                    <a href="javascript:">2</a>
+                    <a href="javascript:">共<i>2</i>页</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- 弹出层1 -->
+    <div class="layer_one">
+        <div class="title_l">
+            <span class="close_one"></span>
+        </div>
+        <div class="box_top">
+                <div class="row1">
+                    <div class="row1_l">业务代码</div>
+                    <div class="row1_r"><input type="text" class="long1"/></div>
+                </div>
+                <div class="row1">
+                    <div class="row1_l">基础业务名称</div>
+                    <div class="row1_r"><input type="text" class="long1"/></div>
+                </div>
+                <div class="row1">
+                    <div class="row1_l">选择下级子业务</div>
+                    <div class="row1_r row1_r1">
+                        <span></span>
+                        <input type="text" class="long1"/>
+                    </div>
+                    <div class="all_chobtn">
+                        <input type="checkbox" class="checkbox"/>
+                        <span>全选</span>
+                    </div>
+                </div>
+        </div>
+        <div class="box_choose">
+            <div class="row1">
+                <div class="row1_r">
+                    <div class="many_che">
+                        <ul>
+                            <li>
+                               <div class="row1_rr">                         
+                                    <input type="checkbox" name="checkbox1"/>
+                                    <span class="today_r">全选</span>
+                                </div> 
+                            </li>
+                            <li>
+                               <div class="row1_rr">                         
+                                    <input type="checkbox" name="checkbox1"/>
+                                    <span class="today_r">全选</span>
+                                </div> 
+                            </li>
+                            <li>
+                               <div class="row1_rr">                         
+                                    <input type="checkbox" name="checkbox1"/>
+                                    <span class="today_r">全选</span>
+                                </div> 
+                            </li>
+                            <li>
+                               <div class="row1_rr">                         
+                                    <input type="checkbox" name="checkbox1"/>
+                                    <span class="today_r">全选</span>
+                                </div> 
+                            </li>
+                            <li>
+                               <div class="row1_rr">                         
+                                    <input type="checkbox" name="checkbox1"/>
+                                    <span class="today_r">全选</span>
+                                </div> 
+                            </li>
+                            <li>
+                               <div class="row1_rr">                         
+                                    <input type="checkbox" name="checkbox1"/>
+                                    <span class="today_r">全选</span>
+                                </div> 
+                            </li>
+                            <li>
+                               <div class="row1_rr">                         
+                                    <input type="checkbox" name="checkbox1"/>
+                                    <span class="today_r">全选</span>
+                                </div> 
+                            </li>
+                            <li>
+                               <div class="row1_rr">                         
+                                    <input type="checkbox" name="checkbox1"/>
+                                    <span class="today_r">全选</span>
+                                </div> 
+                            </li>
+                            <li>
+                               <div class="row1_rr">                         
+                                    <input type="checkbox" name="checkbox1"/>
+                                    <span class="today_r">全选</span>
+                                </div> 
+                            </li>
+                            <li>
+                               <div class="row1_rr">                         
+                                    <input type="checkbox" name="checkbox1"/>
+                                    <span class="today_r">全选</span>
+                                </div> 
+                            </li>
+                            <li>
+                               <div class="row1_rr">                         
+                                    <input type="checkbox" name="checkbox1"/>
+                                    <span class="today_r">全选</span>
+                                </div> 
+                            </li>
+                            <li>
+                               <div class="row1_rr">                         
+                                    <input type="checkbox" name="checkbox1"/>
+                                    <span class="today_r">全选</span>
+                                </div> 
+                            </li>
+                            <li>
+                               <div class="row1_rr">                         
+                                    <input type="checkbox" name="checkbox1"/>
+                                    <span class="today_r">全选</span>
+                                </div> 
+                            </li>
+                            <li>
+                               <div class="row1_rr">                         
+                                    <input type="checkbox" name="checkbox1"/>
+                                    <span class="today_r">全选</span>
+                                </div> 
+                            </li>
+                            <li>
+                               <div class="row1_rr">                         
+                                    <input type="checkbox" name="checkbox1"/>
+                                    <span class="today_r">全选</span>
+                                </div> 
+                            </li>
+                            <li>
+                               <div class="row1_rr">                         
+                                    <input type="checkbox" name="checkbox1"/>
+                                    <span class="today_r">全选</span>
+                                </div> 
+                            </li>
+                            <li>
+                               <div class="row1_rr">                         
+                                    <input type="checkbox" name="checkbox1"/>
+                                    <span class="today_r">全选</span>
+                                </div> 
+                            </li>
+                            <li>
+                               <div class="row1_rr">                         
+                                    <input type="checkbox" name="checkbox1"/>
+                                    <span class="today_r">全选</span>
+                                </div> 
+                            </li>
+                            <li>
+                               <div class="row1_rr">                         
+                                    <input type="checkbox" name="checkbox1"/>
+                                    <span class="today_r">全选</span>
+                                </div> 
+                            </li>
+                            <li>
+                               <div class="row1_rr">                         
+                                    <input type="checkbox" name="checkbox1"/>
+                                    <span class="today_r">全选</span>
+                                </div> 
+                            </li>
+                            <li>
+                               <div class="row1_rr">                         
+                                    <input type="checkbox" name="checkbox1"/>
+                                    <span class="today_r">全选</span>
+                                </div> 
+                            </li>
+                            <li>
+                               <div class="row1_rr">                         
+                                    <input type="checkbox" name="checkbox1"/>
+                                    <span class="today_r">全选</span>
+                                </div> 
+                            </li>
+                            <li>
+                               <div class="row1_rr">                         
+                                    <input type="checkbox" name="checkbox1"/>
+                                    <span class="today_r">全选</span>
+                                </div> 
+                            </li>
+                            <li>
+                               <div class="row1_rr">                         
+                                    <input type="checkbox" name="checkbox1"/>
+                                    <span class="today_r">全选</span>
+                                </div> 
+                            </li>
+                            <li>
+                               <div class="row1_rr">                         
+                                    <input type="checkbox" name="checkbox1"/>
+                                    <span class="today_r">全选</span>
+                                </div> 
+                            </li>
+                            <li>
+                               <div class="row1_rr">                         
+                                    <input type="checkbox" name="checkbox1"/>
+                                    <span class="today_r">全选</span>
+                                </div> 
+                            </li>
+                            <li>
+                               <div class="row1_rr">                         
+                                    <input type="checkbox" name="checkbox1"/>
+                                    <span class="today_r">全选</span>
+                                </div> 
+                            </li>
+                            <li>
+                               <div class="row1_rr">                         
+                                    <input type="checkbox" name="checkbox1"/>
+                                    <span class="today_r">全选</span>
+                                </div> 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_one">
+            <span class="buttonn_one">提交</span>
+        </div>
+    </div>
+    <div class="layer-bgone"></div>
+    <!-- 弹出层2 -->
+    <div class="layer">
+        <div class="title_l">
+            <span class="close"></span>
+        </div>
+        <div class="many_row">
+            <div class="row">
+                <span>业务代码</span>
+                <input type="text" />
+            </div>
+            <div class="row">
+                <span>基础业务名称</span>
+                <input type="text" />
+            </div>
+            <div class="row">
+                <span>上级基础业务名称</span>
+                <select name="daytime" id="daytime"  class="daytime" >
+                    <option value="当天" selected="selected"><a href="#">当天</a></option>
+                    <option value="一天"><a href="#">一天</a></option>
+                    <option value="两天"><a href="#">两天</a></option>
+                    <option value="三天"><a href="#">三天</a></option>
+                    <option value="四天"><a href="#">四天</a></option>
+                </select>
+            </div>
+        </div>
+        <div class="title_l tit2">
+            <div class="choose">
+                <input type="checkbox" class="checkbox_a" />
+                    <i>业务用途</i>
+            </div>
+        </div>
+        <div class="many_choose">
+            <div class="cho">
+                <input type="checkbox" name="checkbox_a" />
+                <div class="frr">
+                    <i class="green">预约业务</i>
+                    <div class="row_box">
+                        <span class="work">默认业务:</span>
+                        <div class="little">
+                            <input type="radio" name="rad2" />
+                            <span class="mll">是</span>
+                        </div>
+                        <div class="little">
+                            <input type="radio" name="rad2" />
+                            <span class="mll">否</span>
+                        </div>
+                        <span>(普通用户普通用户普通用户普通用户)</span>
+                    </div>
+                    <div class="row_box">
+                        <span class="work">预设业务:</span>
+                        <div class="little has_box">
+                            <input type="radio" name="rad1" class=" show_box"/>
+                            <span class="mll">是</span>
+                            
+                        </div>
+                        <div class="little">
+                            <input type="radio" name="rad1" class="hi_box"/>
+                            <span class="mll">否</span>
+                        </div>
+                        <span>(举例：VIP用户)</span>
+                    </div>
+                    <div class="hide_box"></div>
+
+                </div>
+                
+            </div>
+        </div>
+        <div class="many_choose">
+            <div class="cho">
+                <input type="checkbox" name="checkbox_a" />
+                <div class="frr">
+                    <i class="green">排队叫号机业务</i>
+                    <div class="row_box">
+                        <span class="work">默认业务:</span>
+                        <div class="little">
+                            <input type="radio" name="rad" />
+                            <span class="mll">是</span>
+                        </div>
+                        <div class="little">
+                            <input type="radio" name="rad" />
+                            <span class="mll">否</span>
+                        </div>
+                        <span>(普通用户普通用户普通用户普通用户)</span>
+                    </div>
+                    <div class="row_box">
+                        <span class="work">预设业务:</span>
+                        <div class="little">
+                            <input type="text" class="long" />
+                        </div>
+                        <span>(举例：VIP用户)</span>
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+        <div class="many_choose">
+            <div class="cho">
+                <input type="checkbox" name="checkbox_a" />
+                <div class="frr">
+                    <i class="green">填单业务</i>
+                </div>
+                
+            </div>
+        </div>
+        <div class="footer">
+            <span class="buttonn">提交</span>
+        </div>
+        
+
+    </div>
+    <div class="layer-bg"></div>
+</body>
+</html>

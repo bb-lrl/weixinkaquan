@@ -1,0 +1,29 @@
+.tanchu{background:rgba(0,0,0,0.3);position:absolute;height: 590px;width: 1000px;left:50%;margin-left: -500px;top:0;}
+.tanchukuang{top: 85px;width:714px;background:#fff;position:absolute;z-index: 1;left:50%;margin-left: -357px;}
+.tanchukuang .header{height: 55px;width: 100%;background:rgba(0,0,0,0.1);line-height:55px;padding:0 20px;box-sizing: border-box;}
+.tanchukuang .header h3{float: left;}
+.tanchukuang .header div{float: right;height: 20px;width: 20px;margin-top:19px;position:relative;cursor:pointer;}
+.tanchukuang .header div div{height:4px;width: 15px;border-radius: 2px;background:#888;position:absolute;left:5px;top:-12px;}
+.tanchukuang .header div div:nth-of-type(1){transform:rotate(45deg);}
+.tanchukuang .header div div:nth-of-type(2){transform:rotate(135deg);}
+
+.tanchukuang .body{width: 100%;color:#000;font-weight: bold;}
+.tanchukuang .body .body2{margin:0 auto;width: 606px;box-sizing: border-box;font-size:16px;}
+.tanchukuang .body .body2 .sousuo{height: 25px;margin-top:30px;}
+.tanchukuang .body .body2 .sousuo input{padding-left:3px;float: left;width:200px;border:1px solid #999;height: 25px;}
+.tanchukuang .body .body2 .sousuo span{height: 25px;width:30px;display:inline-block;background:url(../images/icon-search.png) no-repeat center center;float: left;cursor:pointer;border:1px solid #999;border-left:0 none;}
+.tanchukuang .body .body2 .nametype{width: 600px;margin-top: 30px;border-top:1px solid #bfbfbf;margin-bottom:30px;}
+.tanchukuang .body .body2 .nametype li{height: 35px;width: 100%;line-height: 35px;border-bottom:1px solid #bfbfbf;padding-left:20px;box-sizing: border-box;}
+.tanchukuang .body .body2 .nametype li:nth-of-type(1){background:#e9e9e9;}
+.tanchukuang .body .body2 .nametype li div{width: 215px;display:inline-block;}
+.tanchukuang .body .body2 .nametype li div input{margin-right: 10px;}
+.tanchukuang .body .body2 .nametype li div span{display:inline-block;height: 16px;width: 16px;background:url(../images/wenhao.png) no-repeat;margin-left: 5px;}
+.tanchukuang .body .body2 .nametype li span{display:inline-block;width: 360px;color:#9d9d9d;font-size:14px;}
+.tanchukuang .body .body2 .nametype li span.current{color:#000;font-size:16px;}
+.tanchukuang .body .body2 p{color:#a6a6a6;font-size:14px;}
+.tanchukuang .footer{height: 75px;width: 100%;background:rgba(0,0,0,0.1);line-height:80px;text-align:center;margin-top:50px;position:relative;}
+.tanchukuang .footer span:nth-of-type(1){position:absolute;top:0;left:20px;}
+.tanchukuang .footer .chooseNum{color:#666;}
+.tanchukuang .footer .quxiao,.queding{height:25px;width: 90px;border:1px solid #888a89;border-radius:3px;display:inline-block;line-height: 25px;text-align: center;margin-right:5px;color:#333;cursor:pointer;}
+.tanchukuang .footer .queding{background:#6ca109;color:#fff;border:0 none;cursor:pointer;}
+/*div里面的弹出框结束*/
